@@ -5,8 +5,8 @@ import { fetchProduct } from "../redux/store";
 import { AiOutlineReload } from "react-icons/ai";
 
 const DisplayItems = () => {
-  const { products, loading, err } = useSelector((state) => state.products1);
-  const { kart, total } = useSelector((state) => state.kart1);
+  const { products } = useSelector((state) => state.products1);
+  const { kart } = useSelector((state) => state.kart1);
   const dispatch = useDispatch();
 
   const handleClick = (e) => {

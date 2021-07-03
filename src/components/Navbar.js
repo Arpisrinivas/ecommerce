@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full bg-blue-500 flex justify-between px-5 py-3 fixed ">
+      <div className="w-full bg-blue-500 flex justify-between px-5 py-3  fixed ">
         <div className="flex ">
           <Link to="/">
             <h2 className="font-mono text-xl ">FakeStore</h2>
