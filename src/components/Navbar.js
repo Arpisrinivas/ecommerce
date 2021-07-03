@@ -53,7 +53,11 @@ const Navbar = () => {
           />
         </div>
       </div>
-      <div className={`sm:hidden ${open ? "w-full bg-blue-500" : "hidden"}`}>
+
+      <div
+        className={`sm:hidden my-12 fixed   ${
+          open ? "w-full bg-blue-500" : "hidden"
+        }`}>
         <hr />
         <ul className="flex flex-col p-2">
           <li className=" ">
