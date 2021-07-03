@@ -1,0 +1,4 @@
+export const ADD_TO_KART = "ADD_TO_KART";
+export const DELETE_FROM_KART = "DELETE_FROM_KART";
+export const INC_COUNT_TOTAL = "INC_COUNT_TOTAL";
+export const DEC_COUNT_TOTAL = "DEC_COUNT_TOTAL";
