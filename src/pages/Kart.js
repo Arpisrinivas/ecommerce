@@ -73,7 +73,7 @@ const Kart = () => {
       <div className="flex flex-col gap-4 md:w-2/3 mb-5">
         {kart && console.log(kart)}
         {kart &&
-          kart.map((prod) => {
+          kart.map((prod,i) => {
             return (
               <div
                 key={prod.id}
@@ -104,16 +104,20 @@ const Kart = () => {
                       className="bg-blue-500 hover:bg-blue-400 border-1 
                     border-blue-500 text-white font-bold rounded-tr-lg 
                     rounded-br-lg px-3"
-                      onClick={handleAdd}>
+                      onClick={handleAdd}
+                      >
                       +
+
                     </button>
                   </div>
                   <button
                     className="bg-red-600 text-white font-bold px-3 
                   rounded mb-3 hover:bg-red-400"
                     id={prod.id}
-                    onClick={handleDelete}>
+                    onClick={handleDelete}
+                    data-testid={"button"+i}>
                     Delete
+                    +
                   </button>
                 </div>
               </div>

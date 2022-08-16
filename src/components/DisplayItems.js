@@ -7,6 +7,7 @@ import { AiOutlineReload } from "react-icons/ai";
 const DisplayItems = () => {
   const { products } = useSelector((state) => state.products1);
   const { kart } = useSelector((state) => state.kart1);
+
   const dispatch = useDispatch();
 
   const handleClick = (e) => {
@@ -49,7 +50,7 @@ const DisplayItems = () => {
   return (
     <div className="flex flex-wrap justify-center md:mx-24 mx-12 pt-28">
       {products.length > 0 ? (
-        products.map((prod) => {
+        products.map((prod,i) => {
           return (
             <div
               key={prod.id}
@@ -72,8 +73,10 @@ const DisplayItems = () => {
                 <button
                   className="text-black bg-white rounded font-bold py-2 px-4"
                   id={prod.id}
-                  onClick={handleClick}>
+                  onClick={handleClick}
+                data-testid={"button"+i}>
                   Add To Cart
+
                 </button>
               </div>
             </div>

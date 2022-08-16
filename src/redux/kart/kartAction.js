@@ -3,12 +3,13 @@ import {
   DEC_COUNT_TOTAL,
   DELETE_FROM_KART,
   INC_COUNT_TOTAL,
-} from "./kartConst";
+  } from "./kartConst";
 
 export const addToKart = ({ prod, total }) => {
   return {
     type: ADD_TO_KART,
     payload: { prod, total },
+
   };
 };
 

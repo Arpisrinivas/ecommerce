@@ -19,7 +19,8 @@ const Navbar = () => {
           <Link to="/">
             <h2 className="font-mono text-xl ">FakeStore</h2>
           </Link>
-          <ul className="sm:flex sm:list-none sm:m-0 sm:px-4 hidden ">
+          <ul className="sm:flex sm:list-none sm:m-0 sm:px-4 hidden "  data-testid={"button"+i}>
+            >
             <li className="mx-3 hover:bg-blue-400 px-3 rounded text-white">
               <Link to="/" className="">
                 Home
@@ -32,8 +33,10 @@ const Navbar = () => {
         </div>
 
         <div className="flex sm:justify-end  w-30 ">
-          <Link to="/kart" className="mr-6 h-6 w-12 flex justify-start">
+          <Link to="/kart" className="mr-6 h-6 w-12 flex justify-start" >
+
             <RiShoppingCartLine className="text-xl hover:text-white inline-block" />
+
             {kart.length > 0 && (
               <span className="text-xs px-1 pb-0 max-h-4 rounded-full bg-red-600 inline-block">
                 {count}
@@ -64,6 +67,7 @@ const Navbar = () => {
             <Link
               to="/"
               className="mx-3 hover:bg-blue-400 px-3 rounded text-white block">
+
               Home
             </Link>
           </li>
